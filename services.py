@@ -24,7 +24,7 @@ detailPDV = {
             "asistenciaColaborador": "Tarde",
             "horaAperturaColaborador": "10:00:00",
             "horaLlegadaColaborador": "10:01",
-            "nombreColaborador": "ELTHON JOHN NANO QUIÑONEZ"
+            "nombreColaborador": "ELTHON JOHN NANO QUINONEZ"
         },
         {
             "asistenciaColaborador": "Puntual",
@@ -175,7 +175,7 @@ listPDV = {
             "coberturadoPDV": "SI",
             "horaAperturaPDV": "09:00",
             "idPDV": 71,
-            "nombrePDV": "BREÑA"
+            "nombrePDV": "BRENA"
         },
         {
             "coberturaCompletaPDV": 2,
