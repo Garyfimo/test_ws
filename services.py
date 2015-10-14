@@ -1019,7 +1019,7 @@ def get_user():
             user_response = u
     return jsonify(user_response)
 
-@app.route('/listPDV/', methods=['GET'])
+@app.route('/listPDV', methods=['GET'])
 def get_store():
     return jsonify(listPDV)
 
