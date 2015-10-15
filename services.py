@@ -994,25 +994,25 @@ def home():
 
 @app.route('/login', methods=['POST'])
 def get_user():
-    if not request.json or not 'username' or not 'user_password' in request.json:
+    if not request.json or not 'username' or not 'password' in request.json:
         abort(400)
     user_response = {
         'code' : -1,
         'name': '',
     }
     for u in users:
-        if request.json['username'] == u['user_nickname'] and request.json['user_password'] == u['user_password']:
+        if request.json['username'] == u['user_nickname'] and request.json['password'] == u['user_password']:
                 user_response = {
                     'code' : u['user_id'],
                     'name': u['user_fullname']
                 }
     return jsonify(user_response)
 
-@app.route('/listPDV', methods=['GET'])
+@app.route('/getlistpdv', methods=['GET'])
 def get_store():
     return jsonify(listPDV)
 
-@app.route('/detailPDV', methods=['GET'])
+@app.route('/getdetailpdv', methods=['GET'])
 def get_stores():
     return jsonify(detailPDV)
 
