@@ -1014,8 +1014,10 @@ def get_user():
     }
     for u in users:
         if request.json['username'] == u['user_nickname'] and request.json['user_password'] == u['user_password']:
-            user_response['code'] = u['user_id']
-            user_response['name'] = u['user_fullname']
+                user_response = {
+                    'code' : u['user_id'],
+                    'name': u['user_fullname']
+                }
     return jsonify(user_response)
 
 @app.route('/listPDV', methods=['GET'])
