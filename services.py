@@ -20,18 +20,6 @@ users = [
 
 detailPDV = {
     "listColaborador": [
-        {
-            "asistenciaColaborador": "Tarde",
-            "horaAperturaColaborador": "10:00:00",
-            "horaLlegadaColaborador": "10:01",
-            "nombreColaborador": "ELTHON JOHN NANO QUINONEZ"
-        },
-        {
-            "asistenciaColaborador": "Puntual",
-            "horaAperturaColaborador": "10:00:00",
-            "horaLlegadaColaborador": "09:59",
-            "nombreColaborador": "MARIA LUZ TACUCHE CHUQUIYAURI"
-        }
     ]
 }
 
