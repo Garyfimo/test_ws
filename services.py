@@ -1009,14 +1009,13 @@ def get_user():
     if not request.json or not 'username' or not 'user_password' in request.json:
         abort(400)
     user_response = {
-        'user_id' : -1,
-            'user_fullname': '',
-            'user_nickname': '',
-            'user_password': ''
+        'code' : -1,
+        'name': '',
     }
     for u in users:
         if request.json['username'] == u['user_nickname'] and request.json['user_password'] == u['user_password']:
-            user_response = u
+            user_response['code'] = u['user_id']
+            user_response['name'] = u['user_fullname']
     return jsonify(user_response)
 
 @app.route('/listPDV', methods=['GET'])
